@@ -58,31 +58,10 @@ fn get_folder_name() -> Result<String, ZxrError> {
 }
 
 fn run() -> Result<(), ZxrError> {
-    // let cur_dir: PathBuf =
-    //     current_dir().map_err(|err| ZxrError::LoadDirectoryError { error: err })?;
-
-    //     let session_name = cur_dir
-    //     .file_name()
-    //     .map_or(Err(ZxrError::FolderError), |r| {
-    //         Ok(r.to_str().unwrap().to_owned())
-    //     })?;
-
-    // let session_name: String = current_dir()
-    // .map_err(|err| ZxrError::LoadDirectoryError { error: err })
-    // .and_then(|dir| {
-    //     return dir.file_name().map_or(Err(ZxrError::FolderError), |r| {
-    //         r.to_str()
-    //             .map_or(Err(ZxrError::PathError), |r| return Ok(r.to_owned()))
-    //     });
-    // })?;
-
-    // let all_sessions: Vec<String> = all_sessions
 
     let all_sessions: Vec<String> = zellij_sessions()?;
 
     let session_name: String = get_folder_name()?;
-
-    //
 
     if all_sessions.contains(&session_name) {
         let err_while_attahcing_session = Command::new(ZELLIJ_COMMAND)
