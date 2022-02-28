@@ -18,14 +18,11 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/selvacodes/zxr.git">
+  <a href="https://zellij.dev">
     <img src="https://zellij.dev/img/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -34,14 +31,7 @@
   <p align="center">
      Command to initialize or attach zellij sessions for current directory
     <br />
-    <a href="https://github.com/selvacodes/zxr.git"><strong>Explore the docs »</strong></a>
     <br />
-    <br />
-    <a href="https://github.com/selvacodes/zxr">View Demo</a>
-    ·
-    <a href="https://github.com/selvacodes/zxr/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/selvacodes/zxr/issues">Request Feature</a>
   </p>
 </div>
 
@@ -75,14 +65,6 @@
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
@@ -95,11 +77,11 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    git clone https://github.com/selvacodes/zxr.git
    ```
-2. Install NPM packages
+2. Install cargo dependencies
    ```sh
    cargo build
    ```
-3. Run to generate bunaries
+3. Run to generate binaries
    ```js
    cargo run
    ```
